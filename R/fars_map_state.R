@@ -11,7 +11,8 @@
 #' @note Requires the map package and dplyr package
 #'
 #' @importFrom dplyr filter
-#' @importFrom dplyr maps map
+#' @importFrom dplyr
+#' @importFrom maps map
 #' @importFrom graphics points
 #'
 #' @export
