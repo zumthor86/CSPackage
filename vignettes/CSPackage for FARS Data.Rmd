@@ -1,0 +1,55 @@
+---
+title: "CSPackage for FARS Data"
+author: "Christopher Sumter"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{CSPackage for FARS Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  root.dir = system.file("testdata",package = "CSPackage")
+)
+library(CSPackage)
+
+```
+
+The CSPackage includes some functions for importing, exploring and visualising the US National Highway Traffic Safety Administration's ([Fatality Analysis Reporting System](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)), which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+## Importing FARS data for a given year
+
+FARS data has a specific file name convention therefore to read *all* fields for a single year, wrap the desired year with **make_filename()** and call **fars_read()**
+
+```{r readYears}
+
+singleYearsData <- fars_read(filename = make_filename(2015))
+
+head(singleYearsData, n=10)
+
+```
+
+## Summarize number of fatalities by state and year
+
+The CSPackage also includes a useful summary function to show the number of fatalities across the United States for a given number of years. 
+
+```{r summariseFARS }
+fars_summarize_years(years = 2013:2015)
+
+```
+
+##Visualizing Fatalities 
+
+In terms of visualization one can create a simple map plot of fatalities for a given year and state (identified by its ID) using the **fars_map_state()** function.
+
+```{r visualizeFatalities}
+
+fars_map_state(year = 2014, state.num = 13)
+
+```
+
+

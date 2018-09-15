@@ -1,6 +1,6 @@
 context("Summary")
 
-setwd(paste0(getwd(),"/inst/testData"))
+setwd(system.file("testdata",package = "CSPackage"))
 
 farsSummary <- fars_read_years(2013:2015)
 
@@ -12,4 +12,7 @@ test_that("Summary is list of Tibbles", {
 
 })
 
-  system.file(package = "ggplot2")
+
+
+
+
