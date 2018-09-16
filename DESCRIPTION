@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("Christopher", "Sumter", email = "csumter1165@gmail.com", role = c("aut", "cre"))
 Description: Imports, summarizes and visualises FARS data.
 Depends: R (>= 3.5.1)
-Imports: graphics, dplyr, tidyr, readr, maps
+Imports: graphics, dplyr, tidyr, readr, maps, magrittr
 License: CC0?
 Encoding: UTF-8
 LazyData: true
