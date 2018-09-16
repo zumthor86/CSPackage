@@ -6,7 +6,9 @@
 #'
 #' @return A summary table giving the number of fatal injuries from crashes, by month and year
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(c(2013:2015))
+#' }
 #'
 #' @importFrom dplyr bind_rows group_by summarize
 #' @importFrom tidyr spread

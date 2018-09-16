@@ -7,7 +7,10 @@
 #' @return A list containing a tibble for each year, with only the MONTH and year columns
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(c(2013:2015))
+#' }
+#'
 #'
 #' @note Produces a warning if the one of the years passed was invalid, i.e. does not exist in working directory or format of years was incorrect
 #'

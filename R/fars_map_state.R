@@ -5,7 +5,10 @@
 #'
 #' @return NULL
 #' @examples
+#' \dontrun{
 #' fars_map_state(44,2015)
+#' }
+#'
 #' @note An error is thrown if the state number is invalid
 #' @note A warning is given if given state did not have any fatalities for that year
 #' @note Requires the map package and dplyr package

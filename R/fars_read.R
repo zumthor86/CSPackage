@@ -5,7 +5,10 @@
 #' @return A tibble containing the FARS data
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("accident_2013.csv.bz2")
+#' }
+#'
 #'
 #' @note Gives an error if filename that is passed doesn't exist in current working directory
 #'

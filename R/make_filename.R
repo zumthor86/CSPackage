@@ -7,7 +7,10 @@
 #' @return A character vector that follows the file name convention for FARS data
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(2019)
+#' }
+#'
 #'
 #' @export
 make_filename <- function(year) {
