@@ -4,4 +4,4 @@ language: R
 sudo: false
 cache: packages
 r:
-  - release
+  - 3.5.1
