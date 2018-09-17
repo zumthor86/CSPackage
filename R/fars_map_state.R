@@ -13,7 +13,7 @@
 #' @note A warning is given if given state did not have any fatalities for that year
 #' @note Requires the map package and dplyr package
 #'
-#' @importFrom dplyr filter
+#' @importFrom dplyr filter_
 #' @importFrom maps map
 #' @importFrom graphics points
 #'

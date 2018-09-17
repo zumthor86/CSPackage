@@ -14,7 +14,7 @@
 #'
 #' @note Produces a warning if the one of the years passed was invalid, i.e. does not exist in working directory or format of years was incorrect
 #'
-#' @importFrom dplyr mutate select
+#' @importFrom dplyr mutate_ select_
 #'
 #' @export
 fars_read_years <- function(years) {

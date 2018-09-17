@@ -10,8 +10,8 @@
 #' fars_summarize_years(c(2013:2015))
 #' }
 #'
-#' @importFrom dplyr bind_rows group_by summarize
-#' @importFrom tidyr spread
+#' @importFrom dplyr bind_rows group_by_ summarize_
+#' @importFrom tidyr spread_
 #'
 #' @export
 fars_summarize_years <- function(years) {
