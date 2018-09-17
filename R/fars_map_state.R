@@ -25,7 +25,7 @@ fars_map_state <- function(state.num, year) {
 
   if(!(state.num %in% unique(data$STATE)))
     stop("invalid STATE number: ", state.num)
-  data.sub <- dplyr::filter(data, STATE == state.num)
+  data.sub <- dplyr::filter_(data, STATE == state.num)
   if(nrow(data.sub) == 0L) {
     message("no accidents to plot")
     return(invisible(NULL))
