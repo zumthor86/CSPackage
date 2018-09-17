@@ -42,14 +42,14 @@ fars_summarize_years(years = 2013:2015)
 
 ```
 
-##Visualizing Fatalities 
+<!-- ##Visualizing Fatalities  -->
 
-In terms of visualization one can create a simple map plot of fatalities for a given year and state (identified by its ID) using the **fars_map_state()** function.
+<!-- In terms of visualization one can create a simple map plot of fatalities for a given year and state (identified by its ID) using the **fars_map_state()** function. -->
 
-```{r visualizeFatalities}
+<!-- ```{r visualizeFatalities} -->
 
-fars_map_state(year = 2014, state.num = 13)
+<!-- fars_map_state(year = 2014, state.num = 13) -->
 
-```
+<!-- ``` -->
 
 
