@@ -16,6 +16,8 @@ A summary table giving the number of fatal injuries from crashes, by month and y
 A function to summarize the number of fatal injuries from car crashes for a given number of years, broken down by month
 }
 \examples{
+\dontrun{
 fars_summarize_years(c(2013:2015))
+}
 
 }

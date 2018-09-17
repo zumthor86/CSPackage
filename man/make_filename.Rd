@@ -16,6 +16,9 @@ A character vector that follows the file name convention for FARS data
 A helper function to create a filename that follows the convention for FARS data
 }
 \examples{
+\dontrun{
 make_filename(2019)
+}
+
 
 }

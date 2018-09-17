@@ -22,5 +22,8 @@ A warning is given if given state did not have any fatalities for that year
 Requires the map package and dplyr package
 }
 \examples{
+\dontrun{
 fars_map_state(44,2015)
+}
+
 }
