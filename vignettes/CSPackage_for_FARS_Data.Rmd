@@ -33,14 +33,14 @@ head(singleYearsData, n=10)
 
 ```
 
-<!-- ## Summarize number of fatalities by state and year -->
+## Summarize number of fatalities by state and year
 
-<!-- The CSPackage also includes a useful summary function to show the number of fatalities across the United States for a given number of years.  -->
+The CSPackage also includes a useful summary function to show the number of fatalities across the United States for a given number of years.
 
-<!-- ```{r summariseFARS } -->
-<!-- fars_summarize_years(years = 2013:2015) -->
+```{r summariseFARS }
+fars_summarize_years(years = 2013:2015)
 
-<!-- ``` -->
+```
 
 ##Visualizing Fatalities
 
