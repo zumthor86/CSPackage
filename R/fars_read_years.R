@@ -15,6 +15,7 @@
 #' @note Produces a warning if the one of the years passed was invalid, i.e. does not exist in working directory or format of years was incorrect
 #'
 #' @importFrom dplyr mutate_ select_
+#' @importFrom magrittr %>%
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -22,8 +23,8 @@ fars_read_years <- function(years) {
     file <- make_filename(year)
     tryCatch({
       dat <- fars_read(file)
-      dplyr::mutate_(dat, year = year) %>%
-        dplyr::select_(MONTH, year)
+      dplyr::mutate_(dat, year = ~year) %>%
+        dplyr::select_(.dots = c("MONTH", 'year'))
     }, error = function(e) {
       warning("invalid year: ", year)
       return(NULL)

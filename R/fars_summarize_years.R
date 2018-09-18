@@ -12,12 +12,13 @@
 #'
 #' @importFrom dplyr bind_rows group_by_ summarize_
 #' @importFrom tidyr spread_
+#' @importFrom magrittr %>%
 #'
 #' @export
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
-    dplyr::group_by_(year, MONTH) %>%
-    dplyr::summarize_(n = n()) %>%
-    tidyr::spread_(year, n)
+    dplyr::group_by_(~year, ~MONTH) %>%
+    dplyr::summarize_(n = ~n()) %>%
+    tidyr::spread_(key_col='year', value_col='n')
 }
